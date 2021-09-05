@@ -3,17 +3,18 @@ from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 Bootstrap(app)
-earnings = 2000
+
 
 
 @app.route("/base")
 def base():
-    return render_template('base.html', earnings=earnings)
+    return render_template('base.html')
 
 
 @app.route("/")
 def home():
-    return render_template('index.html')
+    earnings = 2000
+    return render_template('index.html', content=earnings)
 
 
 @app.route("/login")
