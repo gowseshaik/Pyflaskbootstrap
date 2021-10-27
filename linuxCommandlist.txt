@@ -1,0 +1,10 @@
+To get the list of running and stopped services on ubuntu
+------------------------------------------------------------
+service --status-all
+service --status-all | grep '\[ - \]'
+service --status-all | grep '\[ + \]' 
+
+To get the count of above services:
+-----------------------------------
+service --status-all | wc -l
+

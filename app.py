@@ -1,5 +1,8 @@
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
+# import argparse, socket, time, json, datetime, platform, psutil, requests, pprint, uuid
+# import servermonit
+
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -14,6 +17,8 @@ def base():
 @app.route("/")
 def home():
     earnings = 2000
+    # earn = servermonit.main
+    # return earn 
     return render_template('login.html')
     # return render_template('index.html', content=earnings)
 
