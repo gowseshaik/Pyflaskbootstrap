@@ -14,7 +14,8 @@ def base():
 @app.route("/")
 def home():
     earnings = 2000
-    return render_template('index.html', content=earnings)
+    return render_template('login.html')
+    # return render_template('index.html', content=earnings)
 
 
 @app.route("/login")
